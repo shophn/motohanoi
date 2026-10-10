@@ -26,13 +26,13 @@ assets/app.js               Accessible mobile menu & footer year
 assets/favicon.svg          Original brand mark
 404.html                    Fallback page
 .nojekyll                   Disable Jekyll processing
-.github/workflows/pages.yml GitHub Pages deployment
+.github/workflows/deploy-pages.yml GitHub Pages deployment
 ```
 
 ## 发布前检查
 
-1. GitHub → Settings → Pages → Build and deployment → Source: **GitHub Actions**（若尚未启用）。
-2. 首先确认 GitHub Pages 项目地址可打开，且首页及 `guides/` 页面、移动端菜单、联系按钮可正常使用。
+1. GitHub Pages 已通过 `deploy-pages.yml` 部署（Source: **GitHub Actions**；推送到 `main` 或手动 `workflow_dispatch` 即会触发）。若部署失败，请检查 GitHub → Settings → Pages → Build and deployment → Source 是否为 **GitHub Actions**。
+2. 首先确认 GitHub Pages 项目地址（按默认规则为 `https://shophn.github.io/motohanoi/`）可打开，且首页及 `guides/` 页面、移动端菜单、联系按钮可正常使用。
 3. **尚未确认 `zh.rentbikehanoi.com` DNS 和自定义域名，因此没有写入 CNAME。** 待 Hostinger 配置完成后，再在 GitHub Pages Settings 绑定自定义域名并按 GitHub 文档调整 DNS。
 4. **当前两份 HTML 都带有 `noindex, follow`**，避免未完成的新站被过早收录。正式上线、内容及域名检查后，人工确认移除 noindex 并补充 sitemap/canonical/hreflang。
 5. 检查实际报价、租车合同、车型、押金与中文文字客服能力；不把未经核实的数字写成固定承诺。
