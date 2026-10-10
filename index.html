@@ -1,102 +1,113 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#F5F5F7">
-  <meta name="description" content="Motorbike Nguyen Ha 河内摩托车租赁信息。了解租车方式、车辆选择和联系方式。">
-  <title>Motorbike Nguyen Ha｜河内摩托车租赁</title>
-  <style>
-    :root { color-scheme: light; --bg:#F5F5F7;--paper:#fff;--ink:#1D1D1F;--muted:#6E6E73;--line:#D2D2D7;--blue:#0071E3;--blue-hover:#005BB5; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased; }
-    a { color:inherit; }
-    .shell { width:min(1120px,calc(100% - 40px));margin-inline:auto; }
-    .topbar { height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px; }
-    .brand { font-weight:750;font-size:18px;letter-spacing:-.035em;text-decoration:none;white-space:nowrap; }
-    .brand span { color:var(--blue); }
-    .nav { display:flex;gap:20px;align-items:center;font-size:14px; }
-    .nav a { text-decoration:none;color:var(--muted); }
-    .nav a:hover { color:var(--blue); }
-    .hero { padding:clamp(65px,11vw,142px) 0 clamp(60px,9vw,116px);text-align:center; }
-    .eyebrow { display:inline-block;font-size:13px;font-weight:700;color:#356ba3;background:#e7f1ff;border:1px solid #d1e6ff;border-radius:999px;padding:9px 16px; }
-    h1 { font-size:clamp(46px,7.5vw,88px);letter-spacing:-.065em;line-height:1.11;margin:22px auto;max-width:950px;font-weight:780; }
-    h1 em { font-style:normal;color:var(--blue); }
-    .intro { max-width:610px;margin:0 auto;color:var(--muted);font-size:clamp(16px,2vw,20px);line-height:1.8; }
-    .buttons { display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px; }
-    .btn { display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:13px 24px;min-height:48px;border-radius:999px;font-size:15px;font-weight:660;transition:background .2s,transform .2s; }
-    .btn:hover { transform:translateY(-2px); }
-    .btn-primary { color:white;background:var(--blue); }
-    .btn-primary:hover { background:var(--blue-hover); }
-    .btn-secondary { background:white;border:1px solid var(--line); }
-    .btn-secondary:hover { background:#ebebef; }
-    .small-note { margin-top:22px;color:var(--muted);font-size:13px; }
-    .features { display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:92px; }
-    .panel { border-radius:25px;background:var(--paper);padding:33px 29px;box-shadow:0 10px 30px rgba(18,28,45,.035);min-height:195px; }
-    .symbol { color:var(--blue);font-size:30px;line-height:1;margin-bottom:21px; }
-    h2 { font-size:22px;letter-spacing:-.03em;margin:0 0 10px; }
-    .panel p { font-size:15px;line-height:1.85;color:var(--muted);margin:0; }
-    .contact { border-radius:30px;background:linear-gradient(130deg,#fff 0%,#fff 56%,#EAF2FF 100%);padding:clamp(28px,6vw,62px);margin-bottom:70px; }
-    .contact-grid { display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start; }
-    .contact h2 { font-size:clamp(28px,4vw,42px); }
-    .contact p { color:var(--muted);line-height:1.9; }
-    .details { margin:0;display:grid;gap:18px; }
-    .details div { border-bottom:1px solid #e6e8ed;padding-bottom:13px; }
-    dt { color:var(--muted);font-size:13px;margin-bottom:5px; }
-    dd { margin:0;font-weight:600;font-size:15px;line-height:1.7;overflow-wrap:anywhere; }
-    dd a { color:var(--blue); }
-    footer { border-top:1px solid var(--line);padding:26px 0 42px;color:var(--muted);font-size:13px;line-height:1.8; }
-    .footer-content { display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap; }
-    @media(max-width:760px) { .nav { gap:10px;font-size:12px; }.topbar{height:65px}.brand{font-size:15px}.features{grid-template-columns:1fr;margin-bottom:50px}.panel{min-height:0}.contact-grid{grid-template-columns:1fr;gap:24px}.hero{padding-top:72px}.contact{margin-bottom:50px} }
-    @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto}.btn{transition:none} }
-  </style>
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Motorbike Nguyen Ha 河内摩托车旅行指南：了解车型选择、费用与押金、租车前检查及河内出行建议。提供英语、法语交流与中文文字咨询。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="河内摩托车旅行指南 | Motorbike Nguyen Ha">
+  <meta property="og:description" content="一份更从容的河内摩托车出行指南。了解租车事项、车型与安全建议。">
+  <title>河内摩托车旅行指南 | Motorbike Nguyen Ha</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script defer src="./assets/app.js"></script>
 </head>
 <body>
-  <header class="shell topbar">
-    <a class="brand" href="./" aria-label="Motorbike Nguyen Ha 首页">Motorbike <span>Nguyen Ha</span></a>
-    <nav class="nav" aria-label="导航">
-      <a href="#service">服务信息</a>
-      <a href="#contact">联系我们</a>
-      <a href="https://rentbikehanoi.com/" target="_blank" rel="noopener noreferrer">官方网站 ↗</a>
-    </nav>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="./" aria-label="Motorbike Nguyen Ha 首页">
+        <span class="brand-mark">NH<span class="brand-dot">.</span></span>
+        <span class="brand-lines"><strong>NGUYEN HA</strong><small>HANOI MOTORBIKE JOURNAL</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="主导航">
+        <a href="#explore">探索主题</a>
+        <a href="./guides/">出行指南</a>
+        <a href="#about">关于我们</a>
+        <a href="#contact" class="nav-cta">联系咨询 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section class="shell hero">
-      <span class="eyebrow">🇻🇳 河内 · 越南 / Hanoi, Vietnam</span>
-      <h1>用自己的节奏，<br><em>探索河内。</em></h1>
-      <p class="intro">欢迎来到 Motorbike Nguyen Ha。我们提供河内摩托车租赁相关信息，帮助您了解车型选择、租赁咨询与本地出行。</p>
-      <div class="buttons">
-        <a class="btn btn-primary" href="https://wa.me/84334699969" target="_blank" rel="noopener noreferrer">WhatsApp 咨询 ↗</a>
-        <a class="btn btn-secondary" href="https://zalo.me/0334699969" target="_blank" rel="noopener noreferrer">Zalo 联系 ↗</a>
-      </div>
-      <p class="small-note">中文可通过文字留言咨询，我们会尽力回复。租赁条件请提前确认。</p>
-    </section>
-    <section id="service" class="shell features" aria-label="服务信息">
-      <article class="panel"><div class="symbol" aria-hidden="true">01</div><h2>车辆选择</h2><p>按出行需求咨询摩托车、踏板车及适合的车型；车辆供应情况需提前确认。</p></article>
-      <article class="panel"><div class="symbol" aria-hidden="true">02</div><h2>租赁信息</h2><p>租金、押金、租期及交接安排，以预订前双方确认的信息为准。</p></article>
-      <article class="panel"><div class="symbol" aria-hidden="true">03</div><h2>河内出行</h2><p>探索本地路线与出行建议。请遵守越南现行驾驶资格及道路交通规定。</p></article>
-    </section>
-    <section id="contact" class="shell contact">
-      <div class="contact-grid">
-        <div>
-          <h2>联系 Nguyen Ha</h2>
-          <p>欢迎通过 WhatsApp 或 Zalo 发送文字咨询。我们支持英语、法语沟通；中文消息可借助翻译工具回复。</p>
-          <div class="buttons" style="justify-content:flex-start;margin-top:22px">
-            <a class="btn btn-primary" href="https://wa.me/84334699969" target="_blank" rel="noopener noreferrer">发送 WhatsApp ↗</a>
-            <a class="btn btn-secondary" href="https://rentbikehanoi.com/" target="_blank" rel="noopener noreferrer">查看官网 ↗</a>
+
+  <main id="main">
+    <section class="hero section-space" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="pulse"></span> HANOI · 中文旅行指南</span>
+          <h1 id="hero-title">慢一点，<br><span class="text-gradient">看见河内的另一面。</span></h1>
+          <p class="lead">在巷口与街道之间，发现属于自己的河内节奏。从挑选车型到出发前的准备，我们把重要信息整理得更清晰。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./guides/">探索出行指南 <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#contact">联系 Nguyen Ha <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta" aria-label="联系信息">
+            <div><strong>09:00—21:00</strong><span>每日营业时间</span></div>
+            <div><strong>Long Biên</strong><span>河内 · 越南</span></div>
+            <div><strong>EN · FR</strong><span>中文可文字咨询</span></div>
           </div>
         </div>
-        <dl class="details">
-          <div><dt>店名 / Brand</dt><dd>Motorbike Nguyen Ha</dd></div>
-          <div><dt>地址 / Address</dt><dd>Ngõ 5 Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội, Việt Nam</dd></div>
-          <div><dt>电话 / Phone</dt><dd><a href="tel:+84334699969">+84 334 699 969</a></dd></div>
-          <div><dt>营业时间 / Hours</dt><dd>每日 09:00–21:00（越南时间）</dd></div>
-        </dl>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="visual-label"><span class="visual-chip"></span> MOTION / HANOI <span>001</span></div>
+          <div class="ride-outline">
+            <svg viewBox="0 0 560 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="133" cy="250" r="64" stroke="currentColor" stroke-width="9"/>
+              <circle cx="431" cy="250" r="64" stroke="currentColor" stroke-width="9"/>
+              <circle cx="133" cy="250" r="13" fill="currentColor"/>
+              <circle cx="431" cy="250" r="13" fill="currentColor"/>
+              <path d="M136 250L223 128H330L429 250H300L227 167L180 250H136Z" stroke="currentColor" stroke-width="9" stroke-linejoin="round"/>
+              <path d="M291 94L326 94L349 145L306 191" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+              <path d="M325 93L378 93M224 128H184M180 122H260" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+              <path d="M413 213L402 168L369 152M117 189L97 164" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+              <path d="M264 109L305 104" stroke="#0071E3" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="visual-footer"><span>THE CITY IS YOUR STORY.</span><span class="visual-arrow">↗</span></div>
+          <div class="float-note"><span class="float-kicker">EDITOR'S NOTE</span><strong>城市漫游，<br>从容启程。</strong><span class="float-line"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement" aria-label="服务说明"><div class="container announcement-inner"><span class="sparkle">✦</span><p>出发前请确认车型、价格、押金及合法驾驶资格。我们重视清晰信息，不做不实承诺。</p><a href="./guides/#before-rental">查看须知 <span aria-hidden="true">↗</span></a></div></section>
+
+    <section id="explore" class="section-space topics-section" aria-labelledby="topics-title">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow eyebrow-soft">THE ESSENTIALS</span><h2 id="topics-title">一切重要的，<br>都应该简单明了。</h2></div>
+          <p>一份为初次来到河内的旅行者整理的实用清单。先了解，再出发。</p>
+        </div>
+        <div class="topic-grid">
+          <a class="topic-card topic-blue" href="./guides/#choose-a-bike"><span class="topic-index">01 / CHOOSE</span><div class="topic-icon">◉</div><h3>选择合适的车</h3><p>城市短途、单人或双人出行，如何根据实际需求选择车型。</p><span class="card-link">阅读指南 <span aria-hidden="true">↗</span></span></a>
+          <a class="topic-card topic-white" href="./guides/#before-rental"><span class="topic-index">02 / KNOW</span><div class="topic-icon">◇</div><h3>费用与押金</h3><p>租车前应该确认哪些费用、车辆状况和归还条款。</p><span class="card-link">阅读指南 <span aria-hidden="true">↗</span></span></a>
+          <a class="topic-card topic-dark" href="./guides/#ride-safely"><span class="topic-index">03 / RIDE</span><div class="topic-icon">↗</div><h3>安全出行提示</h3><p>路线、头盔和驾驶资格：让城市探索更有准备。</p><span class="card-link">阅读指南 <span aria-hidden="true">↗</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section section-space">
+      <div class="container about-layout">
+        <div class="about-figure" aria-hidden="true"><span class="figure-top">MOTORBIKE NGUYEN HA</span><strong>HÀ<br>NỘI<span class="blue-period">.</span></strong><span class="figure-bottom">LOCAL PERSPECTIVES / MORE THAN A ROUTE</span></div>
+        <div class="about-copy"><span class="eyebrow eyebrow-soft">ABOUT NGUYEN HA</span><h2>不仅是租车，<br>更是出行前的安心准备。</h2><p>Motorbike Nguyen Ha 位于越南河内 Long Biên。我们为有意了解河内摩托车出行的访客提供实用中文资讯，并协助咨询具体租车事宜。</p><p>目前可使用英语和法语沟通；中文建议优先通过消息联系，必要时借助翻译工具回复。</p><a class="inline-link" href="https://rentbikehanoi.com/" target="_blank" rel="noopener noreferrer">访问官方网站 <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="cta-section section-space" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div><span class="eyebrow eyebrow-white">LET'S TALK</span><h2>准备探索河内了吗？</h2><p>告诉我们计划租用的日期和车型需求，我们将协助确认费用、押金、交接地点及可用情况。</p><div class="contact-actions"><a class="button button-light" href="https://wa.me/84334699969" target="_blank" rel="noopener noreferrer">WhatsApp 咨询 ↗</a><a class="button button-outline" href="https://zalo.me/0334699969" target="_blank" rel="noopener noreferrer">Zalo 咨询 ↗</a></div></div>
+          <div class="contact-details"><span class="contact-symbol" aria-hidden="true">✳</span><span>直接拨打</span><a href="tel:+84334699969">+84 334 699 969</a><small>09:00–21:00 · 每日</small></div>
+        </div>
       </div>
     </section>
   </main>
-  <footer><div class="shell footer-content"><span>© Motorbike Nguyen Ha · 河内摩托车租赁</span><span>本站为中文信息页面，更多详情以 <a href="https://rentbikehanoi.com/">官方网站</a> 为准。</span></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-top"><div><span class="footer-brand">NGUYEN HA<span>.</span></span><p>河内的旅程，从清晰的准备开始。</p></div><address>Ngõ 5 Nguyễn Văn Cừ, Bồ Đề,<br>Long Biên, Hà Nội, Việt Nam</address></div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> Motorbike Nguyen Ha</span><span>中文简体 · <a href="https://rentbikehanoi.com/" target="_blank" rel="noopener noreferrer">官方网站 ↗</a></span></div>
+  </footer>
 </body>
 </html>

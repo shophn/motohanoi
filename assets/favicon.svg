@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Nguyen Ha">
+  <rect width="128" height="128" rx="34" fill="#1D1D1F"/>
+  <path d="M28 88V39h11l27 30V39h11v49H66L39 57v31H28z" fill="#FFFFFF"/>
+  <path d="M87 39h11v18h13V39h9v49h-9V67H98v21H87V39z" fill="#FFFFFF"/>
+  <circle cx="116" cy="103" r="7" fill="#0071E3"/>
+</svg>
